@@ -50,7 +50,7 @@ function Logo() {
 }
 
 function Ctas() {
-  if (!BUY_LINK_ENABLED && !CLAIM_AIRDROP_STARTED) return null;
+  if (!BUY_LINK_ENABLED) return null;
   return (
     <MediaStack
       sxAbove={{
