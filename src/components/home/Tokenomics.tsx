@@ -92,7 +92,7 @@ function Breakdown() {
     <Column spacing={1}>
       <TokenomicsDescription description="Airdrop" allocation={70} />
       <TokenomicsDescription description="Liquidity Pool" allocation={20} />
-      <TokenomicsDescription description="Strategic Reserve" allocation={10} />
+      <TokenomicsDescription description="Treasury" allocation={10} />
     </Column>
   );
 }

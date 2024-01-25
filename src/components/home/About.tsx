@@ -48,7 +48,7 @@ export default function About() {
 }
 
 const bullets = [
-  "The first community coin backed by a fractional NFT",
+  "The first community coin based on a fractional NFT",
   "The first official launch on Jupiter's LFG launchpad",
   "The first NFT minted on the WNS NFT standard",
   "Equal distribution to 1M+ active Solana wallets",
@@ -58,7 +58,7 @@ function Description() {
   return (
     <Column spacing={2}>
       <Typography variant="h1">
-        The first community coin backed by a fractional NFT
+        The first community coin based on a fractional NFT
       </Typography>
 
       <Typography color="text.secondary">
