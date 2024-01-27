@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import {
   BIRDEYE_LINK,
+  BRAND_LINK,
   BUY_LINK_ENABLED,
   BUY_WEN_LINK,
   CLAIM_AIRDROP_EXPIRED,
@@ -56,6 +57,10 @@ function useOptions(): {
     {
       text: "Foundation",
       onClick: scrollTo.foundation,
+    },
+    {
+      text: "Brand",
+      onClick: () => window.open(BRAND_LINK),
     },
 
     {
