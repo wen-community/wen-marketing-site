@@ -1,7 +1,6 @@
 import { Button, Link, Stack, Typography } from "@mui/material";
 import {
   MEDIA,
-  OVOLS_TWITTER_LINK,
   POEM,
   POEM_VAULT_LINK,
   SOLANA_EXPLORER,
@@ -62,8 +61,7 @@ function Description() {
       </Typography>
 
       <Typography color="text.secondary">
-        Using tech from <Link href={OVOLS_TWITTER_LINK}>@OvolsNFT</Link>, we
-        split <Link href={WEN_TWEET_LINK}>@weremeow</Link>’s poem 'A Love Letter
+        We split <Link href={WEN_TWEET_LINK}>@weremeow</Link>’s poem 'A Love Letter
         to Wen Bros' into a trillion pieces that trade like normal Solana
         tokens. Each Wen token equals proportional ownership in Meow's poem.
       </Typography>
