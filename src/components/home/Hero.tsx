@@ -5,7 +5,7 @@ import {
   CLAIM_AIRDROP_EXPIRED,
   CLAIM_AIRDROP_LINK,
   CLAIM_AIRDROP_STARTED,
-  LOGO_TEXT,
+  HERO_LOGO,
 } from "../../constants";
 import { Button, Stack, Tooltip, Typography } from "@mui/material";
 import { FONT_SIZES } from "../theme";
@@ -37,7 +37,7 @@ function Logo() {
   return (
     <Stack sx={{ cursor: "pointer" }} onClick={scrollTo.firstOnPage}>
       <Image
-        src={LOGO_TEXT}
+        src={HERO_LOGO}
         mobileHeight="100px"
         height="200px"
         sx={{
