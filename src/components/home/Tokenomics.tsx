@@ -3,7 +3,7 @@ import { useHomeScrollContext } from "../../contexts/";
 import { MaxWidthWrapper } from "../Page";
 import JupiterSwap from "../jupiter/JupiterSwap";
 import { Column, MediaStack, Row } from "../common";
-import { CLAIM_AIRDROP_LINK, CLAIM_AIRDROP_STARTED } from "../../constants";
+import { CLAIM_AIRDROP_LINK } from "../../constants";
 import { FONT_SIZES, FULL_HEIGHT_WITH_NAV } from "../theme";
 
 const COlORS = { body: "#E5E5E5", caption: "#999999", disabled: "#666666" };
@@ -48,41 +48,32 @@ export default function Tokenomics() {
 }
 
 function ClaimPrompt() {
-  const button = (
-    <Button
-      disabled={!CLAIM_AIRDROP_STARTED}
-      variant="outlined"
-      onClick={() => window.open(CLAIM_AIRDROP_LINK)}
-      sx={{
-        ":disabled": {
-          color: COlORS.disabled,
-          borderColor: COlORS.disabled,
-        },
-        width: "max-content",
-        fontSize: FONT_SIZES.h3,
-        color: COlORS.body,
-        borderColor: COlORS.caption,
-        ":hover": {
-          borderColor: COlORS.body,
-        },
-      }}
-    >
-      Claim Airdrop
-    </Button>
-  );
-
   return (
     <Column spacing={1}>
       <Typography variant="body2" sx={{ color: COlORS.caption }}>
         All unclaimed Wen will be burned after the claim window has ended
       </Typography>
-      {CLAIM_AIRDROP_STARTED ? (
-        button
-      ) : (
-        <Tooltip title="Coming soon">
-          <div style={{ width: "max-content" }}>{button}</div>
-        </Tooltip>
-      )}
+      <Tooltip title="Claim period ended">
+        <Button
+          variant="outlined"
+          onClick={() => window.open(CLAIM_AIRDROP_LINK)}
+          sx={{
+            ":disabled": {
+              color: COlORS.disabled,
+              borderColor: COlORS.disabled,
+            },
+            width: "max-content",
+            fontSize: FONT_SIZES.h3,
+            color: COlORS.body,
+            borderColor: COlORS.caption,
+            ":hover": {
+              borderColor: COlORS.body,
+            },
+          }}
+        >
+          Claim Airdrop
+        </Button>
+      </Tooltip>
     </Column>
   );
 }
