@@ -22,7 +22,7 @@ export default function Hero() {
     >
       <Logo />
       <Typography variant="h3">
-        A community coin to immortalize wen culture
+        Immortalizing wen culture with the cutest cat coin in web3
       </Typography>
       <Ctas />
 
