@@ -3,7 +3,7 @@ import { useHomeScrollContext } from "../../contexts/";
 import { MaxWidthWrapper } from "../Page";
 import JupiterSwap from "../jupiter/JupiterSwap";
 import { Column, MediaStack, Row } from "../common";
-import { CLAIM_AIRDROP_LINK, CLAIM_AIRDROP_STARTED } from "../../constants";
+import { WEN_BURN_TWEET_LINK } from "../../constants";
 import { FONT_SIZES, FULL_HEIGHT_WITH_NAV } from "../theme";
 
 const COlORS = { body: "#E5E5E5", caption: "#999999", disabled: "#666666" };
@@ -32,14 +32,16 @@ export default function Tokenomics() {
                   Tokenomics
                 </Typography>
                 <Typography sx={{ color: COlORS.caption }}>
-                  A total supply of 1 trillion tokens
+                  An original total supply of 1 trillion tokens
                 </Typography>
               </Column>
               <Breakdown />
               <ClaimPrompt />
             </Column>
 
-            <JupiterSwap />
+            <Column sx={{ minWidth: "350px" }}>
+              <JupiterSwap />
+            </Column>
           </MediaStack>
         </MaxWidthWrapper>
       </Stack>
@@ -48,41 +50,33 @@ export default function Tokenomics() {
 }
 
 function ClaimPrompt() {
-  const button = (
-    <Button
-      disabled={!CLAIM_AIRDROP_STARTED}
-      variant="outlined"
-      onClick={() => window.open(CLAIM_AIRDROP_LINK)}
-      sx={{
-        ":disabled": {
-          color: COlORS.disabled,
-          borderColor: COlORS.disabled,
-        },
-        width: "max-content",
-        fontSize: FONT_SIZES.h3,
-        color: COlORS.body,
-        borderColor: COlORS.caption,
-        ":hover": {
-          borderColor: COlORS.body,
-        },
-      }}
-    >
-      Claim Airdrop
-    </Button>
-  );
-
   return (
-    <Column spacing={1}>
+    <Column spacing={2}>
       <Typography variant="body2" sx={{ color: COlORS.caption }}>
-        All unclaimed Wen will be burned after the claim window has ended
+        The Wen claim period has ended. The remaining 300M Wen allocated for the
+        airdrop (30% of the total supply) have been burned
       </Typography>
-      {CLAIM_AIRDROP_STARTED ? (
-        button
-      ) : (
-        <Tooltip title="Coming soon">
-          <div style={{ width: "max-content" }}>{button}</div>
-        </Tooltip>
-      )}
+      <Tooltip title="Claim period ended">
+        <Button
+          variant="outlined"
+          onClick={() => window.open(WEN_BURN_TWEET_LINK)}
+          sx={{
+            ":disabled": {
+              color: COlORS.disabled,
+              borderColor: COlORS.disabled,
+            },
+            width: "max-content",
+            fontSize: FONT_SIZES.h3,
+            color: COlORS.body,
+            borderColor: COlORS.caption,
+            ":hover": {
+              borderColor: COlORS.body,
+            },
+          }}
+        >
+          Read More
+        </Button>
+      </Tooltip>
     </Column>
   );
 }

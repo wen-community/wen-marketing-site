@@ -9,11 +9,7 @@ import {
 import {
   BIRDEYE_LINK,
   BRAND_LINK,
-  BUY_LINK_ENABLED,
   BUY_WEN_LINK,
-  CLAIM_AIRDROP_EXPIRED,
-  CLAIM_AIRDROP_LINK,
-  CLAIM_AIRDROP_STARTED,
   LOGO_TEXT,
   WEN_TWITTER_LINK,
 } from "../../constants";
@@ -62,20 +58,12 @@ function useOptions(): {
       text: "Brand",
       onClick: () => window.open(BRAND_LINK),
     },
-
-    {
-      text: "Claim Airdrop",
-      primary: true,
-      onClick: () => window.open(CLAIM_AIRDROP_LINK),
-      hide: CLAIM_AIRDROP_EXPIRED || !CLAIM_AIRDROP_STARTED,
-    },
     {
       text: "Trade Wen",
       primary: true,
       onClick: () => window.open(BUY_WEN_LINK),
-      hide: !CLAIM_AIRDROP_EXPIRED || !BUY_LINK_ENABLED,
     },
-  ].filter((o) => !o.hide);
+  ];
 }
 
 export default function Navbar() {

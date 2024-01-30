@@ -25,7 +25,9 @@ function Description() {
       <Typography variant="h1">The Wen Foundation</Typography>
 
       <Typography color="text.secondary">
-        The Wen Foundation is a group dedicated to giving back to the Solana community by supporting the development of public goods and further amplifying the message of what is only possible on Solana.
+        The Wen Foundation is a group dedicated to giving back to the Solana
+        community by supporting the development of public goods and further
+        amplifying the message of what is only possible on Solana.
       </Typography>
       <Typography color="text.secondary">
         The Wen Foundation’s first contribution is Wen New Standard (WNS), an
