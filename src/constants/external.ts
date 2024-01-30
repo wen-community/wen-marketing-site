@@ -4,7 +4,8 @@ export const WEN_TWEET_LINK =
   "https://x.com/weremeow/status/1738590330805719289";
 export const OVOLS_TWITTER_LINK = "https://x.com/OvolsNFT";
 export const WEN_FOUNDATION_TWITTER_LINK = "https://x.com/FoundationOfWen";
-
+export const WEN_BURN_TWEET_LINK =
+  "https://X.com/wenwencoin/status/1751990348933464104";
 export const SOLANA_EXPLORER = "https://explorer.solana.com/address/";
 export const CLAIM_AIRDROP_LINK = "https://lfg.jup.ag/wen";
 export const BUY_WEN_LINK = "https://jup.ag/swap/USDC-WEN";

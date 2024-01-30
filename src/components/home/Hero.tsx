@@ -30,7 +30,7 @@ function Logo() {
       <Image
         src={HERO_LOGO}
         mobileHeight="100px"
-        height="200px"
+        height="250px"
         sx={{
           ":hover": { animation: `${shakeAnimation} 0.5s linear infinite` },
         }}

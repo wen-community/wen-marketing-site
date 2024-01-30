@@ -25,7 +25,7 @@ function Description() {
       <Typography variant="h1">The Wen Foundation</Typography>
 
       <Typography color="text.secondary">
-        <Link href={WEN_FOUNDATION_TWITTER_LINK}>@FoundationOfWen</Link> is a
+        <Link href={WEN_FOUNDATION_TWITTER_LINK}>The Wen Foundation</Link> is a
         group dedicated to giving back to the Solana community by supporting the
         development of public goods and further amplifying the message of what
         is only possible on Solana.
