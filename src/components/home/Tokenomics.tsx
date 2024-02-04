@@ -53,7 +53,7 @@ function ClaimPrompt() {
   return (
     <Column spacing={2}>
       <Typography variant="body2" sx={{ color: COlORS.caption }}>
-        The Wen claim period has ended. The remaining 300M Wen allocated for the
+        The Wen claim period has ended. The remaining 300B Wen allocated for the
         airdrop (30% of the total supply) have been burned
       </Typography>
       <Tooltip title="Claim period ended">
