@@ -11,9 +11,10 @@ import {
   BRAND_LINK,
   BUY_WEN_LINK,
   LOGO_TEXT,
+  WEN_TELEGRAM_LINK,
   WEN_TWITTER_LINK,
 } from "../../constants";
-import { BirdEyeIcon, Column, Row, TwitterIcon } from "../common";
+import { BirdEyeIcon, Column, Row, TelegramIcon, TwitterIcon } from "../common";
 import { NAV_BREAKPOINT, NAV_HEIGHT_PX } from "../../constants/app";
 import { ReactNode, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -35,6 +36,11 @@ function useOptions(): {
       text: "x.com",
       icon: <TwitterIcon />,
       onClick: () => window.open(WEN_TWITTER_LINK),
+    },
+    {
+      text: "Telegram",
+      icon: <TelegramIcon />,
+      onClick: () => window.open(WEN_TELEGRAM_LINK),
     },
     {
       text: "Birdeye",
