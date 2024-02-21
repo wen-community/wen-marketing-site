@@ -58,7 +58,7 @@ function Ctas() {
         fullWidth
         variant="contained"
       >
-        Mint
+        Use WNS
       </Button>
       <Button
         onClick={() => window.open(WNS_REPO_LINK)}
