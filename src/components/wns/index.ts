@@ -1,4 +1,6 @@
 import WnsBenefits from "./WnsBenefits";
 import WnsHeader from "./WnsHeader";
 import WnsPartners from "./WnsPartners";
-export { WnsBenefits, WnsHeader, WnsPartners };
+import WnsDevLinks from "./WnsDevLinks";
+
+export { WnsBenefits, WnsHeader, WnsPartners, WnsDevLinks };

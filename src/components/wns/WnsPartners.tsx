@@ -30,7 +30,13 @@ function Partners() {
   return (
     <Row sx={{ justifyContent: "center" }} wrap spacing={3}>
       {LOGOS.map((logo) => (
-        <Image variant="fixed-height" height="40px" width="auto" src={logo} />
+        <Image
+          key={logo}
+          variant="fixed-height"
+          height="40px"
+          width="auto"
+          src={logo}
+        />
       ))}
     </Row>
   );
@@ -43,7 +49,7 @@ function Header() {
         Our Partners
       </Typography>
       <Typography sx={{ color: DARK_COlORS.caption }}>
-        Your favorite Solana apps already support WNS.
+        Your favorite Solana apps already support WNS
       </Typography>
     </Column>
   );

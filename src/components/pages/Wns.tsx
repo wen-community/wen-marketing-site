@@ -1,5 +1,5 @@
 import { MaxWidthWrapper, Page } from "../Page";
-import { WnsBenefits, WnsHeader, WnsPartners } from "../wns";
+import { WnsBenefits, WnsDevLinks, WnsHeader, WnsPartners } from "../wns";
 
 export default function Wns() {
   return (
@@ -11,6 +11,9 @@ export default function Wns() {
         <WnsBenefits />
       </MaxWidthWrapper>
       <WnsPartners />
+      <MaxWidthWrapper>
+        <WnsDevLinks />
+      </MaxWidthWrapper>
     </Page>
   );
 }
