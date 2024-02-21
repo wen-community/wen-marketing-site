@@ -1,11 +1,14 @@
 import { MaxWidthWrapper, Page } from "../Page";
-import WnsHeader from "../wns/WnsHeader";
+import { WnsBenefits, WnsHeader } from "../wns";
 
 export default function Wns() {
   return (
-    <Page>
+    <Page spacing={8}>
       <MaxWidthWrapper>
         <WnsHeader />
+      </MaxWidthWrapper>
+      <MaxWidthWrapper>
+        <WnsBenefits />
       </MaxWidthWrapper>
     </Page>
   );
