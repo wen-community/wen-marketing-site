@@ -44,11 +44,11 @@ function Partners() {
 function Header() {
   return (
     <Column spacing={0.5} alignItems="center">
-      <Typography variant="h1" sx={{ color: DARK_COlORS.body }}>
+      <Typography
+        variant="h3"
+        sx={{ fontWeight: "normal", color: DARK_COlORS.body }}
+      >
         Our Partners
-      </Typography>
-      <Typography sx={{ color: DARK_COlORS.caption }}>
-        Your favorite Solana teams support WNS
       </Typography>
     </Column>
   );
