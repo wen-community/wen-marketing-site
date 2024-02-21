@@ -2,7 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import { MaxWidthWrapper } from "../Page";
 import { Column, Image, Row } from "../common";
 import { DARK_COlORS } from "../theme";
-import { HERO_LOGO } from "../../constants";
+import { WNS_PARTNER_LOGOS } from "../../constants";
 
 export default function WnsPartners() {
   return (
@@ -25,15 +25,14 @@ export default function WnsPartners() {
   );
 }
 
-const LOGOS = Array(8).fill(HERO_LOGO);
 function Partners() {
   return (
     <Row sx={{ justifyContent: "center" }} wrap spacing={3}>
-      {LOGOS.map((logo) => (
+      {WNS_PARTNER_LOGOS.map((logo) => (
         <Image
           key={logo}
           variant="fixed-height"
-          height="40px"
+          height="24px"
           width="auto"
           src={logo}
         />
