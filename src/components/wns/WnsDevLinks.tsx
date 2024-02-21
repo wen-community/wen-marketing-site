@@ -115,11 +115,15 @@ function Header() {
   );
 }
 
-type LinkType = { label: string; href: string };
+type LinkType = { label: string } & (
+  | { href: string }
+  | { isComingSoon: boolean }
+);
 const LINKS: LinkType[] = [
   { label: "Core Repository", href: WNS_REPO_LINK },
   { label: "Developer Tools Repository", href: DEV_TOOL_REPO_LINK },
   { label: "Developer Documentation", href: DEV_DOCS_LINK },
+  { label: "migrate to WNS (Soon)", isComingSoon: true },
 ];
 
 function DevLinks() {
@@ -133,13 +137,16 @@ function DevLinks() {
 }
 
 function DevLink(link: LinkType) {
+  const disabled = "isComingSoon" in link;
+
   return (
     <Typography
       variant="h2"
-      onClick={() => window.open(link.href)}
+      color={disabled ? "text.disabled" : undefined}
+      onClick={() => "href" in link && window.open(link.href)}
       sx={{
-        cursor: "pointer",
-        ":hover": { textDecoration: "underline" },
+        cursor: disabled ? "not-allowed" : "pointer",
+        ":hover": { textDecoration: disabled ? "normal" : "underline" },
         fontWeight: "normal",
         alignItems: "center",
         display: "flex",
