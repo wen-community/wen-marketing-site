@@ -1,5 +1,9 @@
 import { Button, Typography } from "@mui/material";
-import { FOUNDATION_LOGO, WNS_INTEREST_FORM, WNS_REPO } from "../../constants";
+import {
+  FOUNDATION_LOGO,
+  WNS_INTEREST_FORM_LINK,
+  WNS_REPO_LINK,
+} from "../../constants";
 import { Column, Image, Row } from "../common";
 
 export default function WnsHeader() {
@@ -41,14 +45,14 @@ function Ctas() {
   return (
     <Row sx={{ maxWidth: "300px", width: "100%" }} spacing={1}>
       <Button
-        onClick={() => window.open(WNS_INTEREST_FORM)}
+        onClick={() => window.open(WNS_INTEREST_FORM_LINK)}
         fullWidth
         variant="contained"
       >
         Mint
       </Button>
       <Button
-        onClick={() => window.open(WNS_REPO)}
+        onClick={() => window.open(WNS_REPO_LINK)}
         fullWidth
         variant="outlined"
       >

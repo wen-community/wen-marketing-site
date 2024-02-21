@@ -15,8 +15,8 @@ export const POEM_VAULT_LINK =
 export const BRAND_LINK =
   "https://drive.google.com/drive/folders/1h5o8OayHwK2_tRB9QrFF3GLCNeKVf_9a";
 
-export const WNS_REPO = "https://github.com/wen-community";
+export const WNS_REPO_LINK = "https://github.com/wen-community";
 export const DEV_TOOL_REPO_LINK = "https://github.com/wen-community";
 export const DEV_DOCS_LINK = "https://github.com/wen-community";
 
-export const WNS_INTEREST_FORM = "https://github.com/wen-community";
+export const WNS_INTEREST_FORM_LINK = "https://github.com/wen-community";

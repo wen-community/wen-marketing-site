@@ -3,7 +3,7 @@ import {
   DEV_DOCS_LINK,
   DEV_TOOL_REPO_LINK,
   POEM,
-  WNS_REPO,
+  WNS_REPO_LINK,
 } from "../../constants";
 import { Column, Image, MediaStack } from "../common";
 import { LIGHT_SHADOW } from "../theme";
@@ -51,7 +51,7 @@ function Header() {
 
 type Link = { label: string; href: string };
 const LINKS: Link[] = [
-  { label: "Core Repository", href: WNS_REPO },
+  { label: "Core Repository", href: WNS_REPO_LINK },
   { label: "Developer Tools Repository", href: DEV_TOOL_REPO_LINK },
   { label: "Developer Documentation", href: DEV_DOCS_LINK },
 ];
