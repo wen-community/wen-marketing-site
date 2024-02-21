@@ -54,7 +54,6 @@ function useOptions(): {
     {
       text: "WNS",
       onClick: () => navigate(`/${WNS_SLUG}`),
-      hide: true,
     },
     {
       text: "Brand",
@@ -65,7 +64,7 @@ function useOptions(): {
       primary: true,
       onClick: () => window.open(BUY_WEN_LINK),
     },
-  ].filter((v) => !v.hide);
+  ];
 }
 
 export default function Navbar() {
