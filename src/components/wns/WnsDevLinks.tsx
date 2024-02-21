@@ -2,10 +2,10 @@ import { Typography } from "@mui/material";
 import {
   ASSET_DASH_ELEMENTS_LINK,
   DEV_DOCS_LINK,
-  DEV_TOOL_REPO_LINK,
   ELEMENTS_LOGO,
   POEM,
   POEM_VAULT_LINK,
+  WEN_GITHUB_LINK,
   WNS_REPO_LINK,
 } from "../../constants";
 import { Column, Image, MediaStack, Row } from "../common";
@@ -130,8 +130,8 @@ type LinkType = { label: string } & (
   | { isComingSoon: boolean }
 );
 const LINKS: LinkType[] = [
-  { label: "Core Repository", href: WNS_REPO_LINK },
-  { label: "Developer Tools Repository", href: DEV_TOOL_REPO_LINK },
+  { label: "Wen Github", href: WEN_GITHUB_LINK },
+  { label: "WNS Repository", href: WNS_REPO_LINK },
   { label: "Developer Documentation", href: DEV_DOCS_LINK },
   { label: "migrate to WNS (Soon)", isComingSoon: true },
 ];

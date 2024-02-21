@@ -17,8 +17,8 @@ export const ASSET_DASH_ELEMENTS_LINK =
 export const BRAND_LINK =
   "https://drive.google.com/drive/folders/1h5o8OayHwK2_tRB9QrFF3GLCNeKVf_9a";
 
-export const WNS_REPO_LINK = "https://github.com/wen-community";
-export const DEV_TOOL_REPO_LINK =
+export const WEN_GITHUB_LINK = "https://github.com/wen-community";
+export const WNS_REPO_LINK =
   "https://github.com/wen-community/wen-new-standard";
-export const DEV_DOCS_LINK = "https://github.com/wen-community";
-export const WNS_INTEREST_FORM_LINK = "https://github.com/wen-community";
+export const DEV_DOCS_LINK = "https://wns.wenwencoin.com";
+export const WNS_INTEREST_FORM_LINK = "https://8tzuyt4ev4d.typeform.com/to/Hsy6Tl0W";

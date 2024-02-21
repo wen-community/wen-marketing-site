@@ -27,7 +27,7 @@ const BENEFITS: BenefitType[] = [
     icon: <Bolt />,
     header: "Functional",
     description:
-      "Low mint cost, fully refundable, embedded royalty distributions, and much more",
+      "Lowest mint cost on market, fully refundable, embedded royalty distributions, and much more powered by Token Extensions",
   },
 ];
 
