@@ -13,14 +13,17 @@ import {
   LOGO_TEXT,
   WEN_TELEGRAM_LINK,
   WEN_TWITTER_LINK,
+  NAV_BREAKPOINT,
+  NAV_HEIGHT_PX,
+  WNS_SLUG,
+  HOME_SLUG,
 } from "../../constants";
 import { BirdEyeIcon, Column, Row, TelegramIcon, TwitterIcon } from "../common";
-import { NAV_BREAKPOINT, NAV_HEIGHT_PX } from "../../constants/app";
 import { ReactNode, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { FONT_SIZES } from "../theme";
 import { useOutsideAlerter } from "../../util";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function useOptions(): {
   text: string;
@@ -50,7 +53,7 @@ function useOptions(): {
 
     {
       text: "WNS",
-      onClick: () => navigate("/wns"),
+      onClick: () => navigate(`/${WNS_SLUG}`),
     },
     {
       text: "Brand",
@@ -164,5 +167,7 @@ function Mobile() {
 }
 
 const Logo = () => (
-  <img alt="Wen Logo" src={LOGO_TEXT} width="70px" height="30px" />
+  <Link to={HOME_SLUG}>
+    <img alt="Wen Logo" src={LOGO_TEXT} width="70px" height="30px" />
+  </Link>
 );
