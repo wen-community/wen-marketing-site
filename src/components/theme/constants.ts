@@ -24,3 +24,9 @@ export const FONT_WEIGHTS = { normal: 400, bold: 500, logo: 700 };
 export const FULL_HEIGHT_WITH_NAV = `calc(100vh - ${NAV_HEIGHT * 2}px - ${
   SPACING_PX_VAL * APP_PADDING.mobile * 2
 }px)`;
+
+export const DARK_COlORS = {
+  body: "#E5E5E5",
+  caption: "#999999",
+  disabled: "#666666",
+};
