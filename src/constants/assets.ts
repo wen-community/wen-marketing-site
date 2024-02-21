@@ -18,6 +18,8 @@ export const MAGIC_EDEN_LOGO = `${SHDW_URL}/magic-eden-logo.svg`;
 export const OVOLS_LOGO = `${SHDW_URL}/ovols-logo.svg`;
 export const PHANTOM_LOGO = `${SHDW_URL}/phantom-logo.svg`;
 export const TENSOR_LOGO = `${SHDW_URL}/tensor-logo.svg`;
+export const HELIUS_LOGO = `${SHDW_URL}/helius-logo.svg`;
+
 export const WNS_PARTNER_LOGOS = [
   TENSOR_LOGO,
   MAGIC_EDEN_LOGO,
@@ -25,4 +27,5 @@ export const WNS_PARTNER_LOGOS = [
   JUPITER_LOGO,
   ASSET_DASH_LOGO,
   OVOLS_LOGO,
+  HELIUS_LOGO,
 ];

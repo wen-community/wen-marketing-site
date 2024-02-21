@@ -27,12 +27,12 @@ export default function WnsPartners() {
 
 function Partners() {
   return (
-    <Row sx={{ justifyContent: "center" }} wrap spacing={3}>
+    <Row sx={{ justifyContent: "center" }} wrap spacing={4}>
       {WNS_PARTNER_LOGOS.map((logo) => (
         <Image
           key={logo}
           variant="fixed-height"
-          height="24px"
+          height="32px"
           width="auto"
           src={logo}
         />
@@ -48,7 +48,7 @@ function Header() {
         Our Partners
       </Typography>
       <Typography sx={{ color: DARK_COlORS.caption }}>
-        Your favorite Solana apps already support WNS
+        Your favorite Solana teams support WNS
       </Typography>
     </Column>
   );
