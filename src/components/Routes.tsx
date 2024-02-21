@@ -4,7 +4,7 @@ import {
   Route,
   Routes as RouterRoutes,
 } from "react-router-dom";
-import { Home } from "../pages";
+import { Home } from "./pages";
 import { HOME_SLUG, WNS_SLUG } from "../constants";
 
 export default function Routes() {
