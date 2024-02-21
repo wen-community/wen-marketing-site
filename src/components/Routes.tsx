@@ -4,7 +4,7 @@ import {
   Route,
   Routes as RouterRoutes,
 } from "react-router-dom";
-import { Home } from "./pages";
+import { Home, Wns } from "./pages";
 import { HOME_SLUG, WNS_SLUG } from "../constants";
 
 export default function Routes() {
@@ -12,7 +12,7 @@ export default function Routes() {
     <BrowserRouter>
       <RouterRoutes>
         <Route path={HOME_SLUG} element={<Home />} />
-        <Route path={WNS_SLUG} element={<Home />} />
+        <Route path={WNS_SLUG} element={<Wns />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </RouterRoutes>
