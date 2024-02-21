@@ -1,5 +1,5 @@
 import { ReactElement } from "react";
-import { Column, Row } from "../common";
+import { Column, MediaStack } from "../common";
 import { LIGHT_SHADOW } from "../theme";
 import { Typography } from "@mui/material";
 import { Bolt, Layers, Public } from "@mui/icons-material";
@@ -33,11 +33,11 @@ const BENEFITS: BenefitType[] = [
 
 export default function WnsBenefits() {
   return (
-    <Row spacing={2} alignItems="stretch">
+    <MediaStack spacing={2} sxAbove={{ alignItems: "stretch" }}>
       {BENEFITS.map((b, i) => (
         <Benefit key={i} {...b} />
       ))}
-    </Row>
+    </MediaStack>
   );
 }
 
@@ -48,23 +48,23 @@ function Benefit(benefit: BenefitType) {
       sx={{
         borderRadius: 1,
         width: "100%",
-        px: 3,
-        py: 2,
         boxShadow: LIGHT_SHADOW,
       }}
     >
-      <Typography
-        sx={{
-          gap: 1,
-          display: "flex",
-          alignItems: "center",
-          svg: { fontSize: "inherit" },
-        }}
-        variant="h2"
-      >
-        {benefit.icon} {benefit.header}
-      </Typography>
-      <Typography color="text.secondary"> {benefit.description} </Typography>
+      <Column sx={{ px: 3, py: 2 }}>
+        <Typography
+          sx={{
+            gap: 1,
+            display: "flex",
+            alignItems: "center",
+            svg: { fontSize: "inherit" },
+          }}
+          variant="h2"
+        >
+          {benefit.icon} {benefit.header}
+        </Typography>
+        <Typography color="text.secondary"> {benefit.description} </Typography>
+      </Column>
     </Column>
   );
 }

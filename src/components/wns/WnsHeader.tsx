@@ -1,6 +1,7 @@
 import { Button, Typography } from "@mui/material";
 import {
   FOUNDATION_LOGO,
+  MEDIA,
   WNS_INTEREST_FORM_LINK,
   WNS_REPO_LINK,
 } from "../../constants";
@@ -24,8 +25,13 @@ export default function WnsHeader() {
 function Logo() {
   return (
     <Row spacing={3}>
-      <Image src={FOUNDATION_LOGO} size="60px" />
-      <Typography sx={{ fontSize: "60px" }} variant="h1">
+      <Image
+        src={FOUNDATION_LOGO}
+        mobileHeight="30px"
+        mobileWidth="30px"
+        size="60px"
+      />
+      <Typography sx={{ [MEDIA.LG.above]: { fontSize: "60px" } }} variant="h1">
         Wen New Standard
       </Typography>
     </Row>
@@ -34,7 +40,10 @@ function Logo() {
 
 function Subtitle() {
   return (
-    <Typography sx={{ fontSize: "24px" }} color="text.secondary">
+    <Typography
+      sx={{ [MEDIA.LG.above]: { fontSize: "24px" } }}
+      color="text.secondary"
+    >
       A new generation of tokenized assets on Solana, powered by Token
       Extensions
     </Typography>

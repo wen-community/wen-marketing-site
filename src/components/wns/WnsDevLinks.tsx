@@ -15,11 +15,7 @@ import { useState } from "react";
 
 export default function WnsDevLinks() {
   return (
-    <MediaStack
-      sxBelow={{ flexDirection: "column-reverse" }}
-      sxAbove={{ alignItems: "flex-start" }}
-      spacing={6}
-    >
+    <MediaStack sxAbove={{ alignItems: "flex-start" }} spacing={6}>
       <Carousel />
       <Column spacing={4}>
         <Header />
