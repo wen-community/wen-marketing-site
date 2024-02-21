@@ -9,3 +9,5 @@ export const LOGO_CAT = `${SHDW_URL}/wen_head.png`;
 
 export const POEM = `${SHDW_URL}/wen_poem.jpg`;
 export const FOUNDATION_LOGO = `${SHDW_URL}/wen_foundation.png`;
+export const ELEMENTS_LOGO =
+  "https://pbs.twimg.com/media/GGLsAmzWoAA4nP5?format=jpg&name=large";
