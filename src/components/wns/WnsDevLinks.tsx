@@ -11,7 +11,7 @@ import {
 import { Column, Image, MediaStack, Row } from "../common";
 import { LIGHT_SHADOW } from "../theme";
 import { ArrowOutward } from "@mui/icons-material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function WnsDevLinks() {
   return (
@@ -50,6 +50,16 @@ const CAROUSEL: CarouselType[] = [
 function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const selected = CAROUSEL[activeIndex];
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const nextIndex = (activeIndex + 1) % CAROUSEL.length;
+      setActiveIndex(nextIndex);
+    }, 5000);
+
+    return () => clearInterval(intervalId);
+  }, [activeIndex]);
+
   return (
     <Column
       spacing={2}
