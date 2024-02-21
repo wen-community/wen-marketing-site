@@ -10,13 +10,13 @@ import {
   BIRDEYE_LINK,
   BRAND_LINK,
   BUY_WEN_LINK,
-  LOGO_TEXT,
   WEN_TELEGRAM_LINK,
   WEN_TWITTER_LINK,
   NAV_BREAKPOINT,
   NAV_HEIGHT_PX,
   WNS_SLUG,
   HOME_SLUG,
+  LOGO_CAT,
 } from "../../constants";
 import { BirdEyeIcon, Column, Row, TelegramIcon, TwitterIcon } from "../common";
 import { ReactNode, useState } from "react";
@@ -168,6 +168,6 @@ function Mobile() {
 
 const Logo = () => (
   <Link to={HOME_SLUG}>
-    <img alt="Wen Logo" src={LOGO_TEXT} width="70px" height="30px" />
+    <img alt="Wen Logo" src={LOGO_CAT} width="auto" height="40px" />
   </Link>
 );
