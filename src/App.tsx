@@ -1,11 +1,11 @@
 import "./App.css";
 import Providers from "./components/Providers";
-import { Home } from "./pages";
+import Routes from "./components/Routes";
 
 function App() {
   return (
     <Providers>
-      <Home />
+      <Routes />
     </Providers>
   );
 }
