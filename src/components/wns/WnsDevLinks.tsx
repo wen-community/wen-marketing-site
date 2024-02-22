@@ -4,8 +4,8 @@ import {
   DEV_DOCS_LINK,
   ELEMENTS_LOGO,
   POEM,
-  POEM_VAULT_LINK,
   WEN_GITHUB_LINK,
+  WEN_TWEET_LINK,
   WNS_REPO_LINK,
 } from "../../constants";
 import { Column, Image, MediaStack, Row } from "../common";
@@ -41,9 +41,10 @@ const CAROUSEL: CarouselType[] = [
   },
   {
     header: "Wen Poem",
-    description: "First NFT minted on WNS by Meow",
+    description:
+      "The First NFT minted on WNS. The NFT was minted by Meow as his first ever NFT",
     image: POEM,
-    href: POEM_VAULT_LINK,
+    href: WEN_TWEET_LINK,
   },
 ];
 
@@ -82,7 +83,7 @@ function Carousel() {
         <Typography
           sx={{
             // fixed height to prevent jumping on text height switch
-            height: "40px",
+            height: "50px",
           }}
           variant="body2"
           color="text.secondary"
