@@ -32,7 +32,7 @@ function Partners() {
         <Image
           key={logo}
           variant="fixed-height"
-          height="32px"
+          height="36px"
           mobileHeight="20px"
           width="auto"
           src={logo}

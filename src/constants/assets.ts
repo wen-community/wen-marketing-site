@@ -23,11 +23,11 @@ export const BACKPACK_LOGO = `${SHDW_URL}/backpack-logo.svg`;
 
 export const WNS_PARTNER_LOGOS = [
   TENSOR_LOGO,
-  MAGIC_EDEN_LOGO,
   PHANTOM_LOGO,
   BACKPACK_LOGO,
   JUPITER_LOGO,
   ASSET_DASH_LOGO,
   OVOLS_LOGO,
   HELIUS_LOGO,
+  // MAGIC_EDEN_LOGO, // coming soon
 ];
