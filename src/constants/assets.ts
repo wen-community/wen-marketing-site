@@ -20,6 +20,8 @@ export const PHANTOM_LOGO = `${SHDW_URL}/phantom-logo.svg`;
 export const TENSOR_LOGO = `${SHDW_URL}/tensor-logo.svg`;
 export const HELIUS_LOGO = `${SHDW_URL}/helius-logo.svg`;
 export const BACKPACK_LOGO = `${SHDW_URL}/backpack-logo.svg`;
+export const SOLANA_FOUNDATION_LOGO =
+  "https://solana.org/_next/static/media/logo-wordmark-light.a56a29ac.svg";
 
 export const WNS_PARTNER_LOGOS = [
   TENSOR_LOGO,
@@ -29,5 +31,6 @@ export const WNS_PARTNER_LOGOS = [
   ASSET_DASH_LOGO,
   OVOLS_LOGO,
   HELIUS_LOGO,
-  // MAGIC_EDEN_LOGO, // coming soon
+  SOLANA_FOUNDATION_LOGO,
+  // MAGIC_EDEN_LOGO, // coming soon ??
 ];
