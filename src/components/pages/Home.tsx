@@ -1,6 +1,6 @@
-import { Hero, About, Tokenomics, Foundation } from "../components/home";
-import { MaxWidthWrapper, Page } from "../components/Page";
-import { SPACING_PX_VAL } from "../components/theme";
+import { Hero, About, Tokenomics, Foundation } from "../home";
+import { MaxWidthWrapper, Page } from "../Page";
+import { SPACING_PX_VAL } from "../theme";
 
 const spacing = 8;
 export default function Home() {
@@ -15,7 +15,7 @@ export default function Home() {
       </MaxWidthWrapper>
 
       <Tokenomics />
-      
+
       <MaxWidthWrapper sx={{ mb: `${SPACING_PX_VAL * spacing}px !important` }}>
         <Foundation />
       </MaxWidthWrapper>

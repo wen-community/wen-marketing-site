@@ -4,9 +4,8 @@ import { MaxWidthWrapper } from "../Page";
 import JupiterSwap from "../jupiter/JupiterSwap";
 import { Column, MediaStack, Row } from "../common";
 import { WEN_BURN_TWEET_LINK } from "../../constants";
-import { FONT_SIZES, FULL_HEIGHT_WITH_NAV } from "../theme";
+import { DARK_COlORS, FONT_SIZES, FULL_HEIGHT_WITH_NAV } from "../theme";
 
-const COlORS = { body: "#E5E5E5", caption: "#999999", disabled: "#666666" };
 export default function Tokenomics() {
   const { tokenomicsRef } = useHomeScrollContext();
   return (
@@ -28,10 +27,10 @@ export default function Tokenomics() {
           >
             <Column spacing={4}>
               <Column>
-                <Typography variant="h1" sx={{ color: COlORS.body }}>
+                <Typography variant="h1" sx={{ color: DARK_COlORS.body }}>
                   Tokenomics
                 </Typography>
-                <Typography sx={{ color: COlORS.caption }}>
+                <Typography sx={{ color: DARK_COlORS.caption }}>
                   An original total supply of 1 trillion tokens
                 </Typography>
               </Column>
@@ -52,7 +51,7 @@ export default function Tokenomics() {
 function ClaimPrompt() {
   return (
     <Column spacing={2}>
-      <Typography variant="body2" sx={{ color: COlORS.caption }}>
+      <Typography variant="body2" sx={{ color: DARK_COlORS.caption }}>
         The Wen claim period has ended. The remaining 300B Wen allocated for the
         airdrop (30% of the total supply) have been burned
       </Typography>
@@ -62,15 +61,15 @@ function ClaimPrompt() {
           onClick={() => window.open(WEN_BURN_TWEET_LINK)}
           sx={{
             ":disabled": {
-              color: COlORS.disabled,
-              borderColor: COlORS.disabled,
+              color: DARK_COlORS.disabled,
+              borderColor: DARK_COlORS.disabled,
             },
             width: "max-content",
             fontSize: FONT_SIZES.h3,
-            color: COlORS.body,
-            borderColor: COlORS.caption,
+            color: DARK_COlORS.body,
+            borderColor: DARK_COlORS.caption,
             ":hover": {
-              borderColor: COlORS.body,
+              borderColor: DARK_COlORS.body,
             },
           }}
         >
@@ -100,12 +99,12 @@ function TokenomicsDescription({
 }) {
   return (
     <Row spacing={1}>
-      <Typography variant="h3" sx={{ color: COlORS.body }}>
+      <Typography variant="h3" sx={{ color: DARK_COlORS.body }}>
         {description}
       </Typography>
       <Typography
         variant="h3"
-        sx={{ fontWeight: "normal", color: COlORS.caption }}
+        sx={{ fontWeight: "normal", color: DARK_COlORS.caption }}
       >
         {allocation}%
       </Typography>
