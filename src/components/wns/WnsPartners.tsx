@@ -49,7 +49,7 @@ function Header() {
         variant="h3"
         sx={{ fontWeight: "normal", color: DARK_COlORS.body }}
       >
-        Our Partners
+        Supported By
       </Typography>
     </Column>
   );
