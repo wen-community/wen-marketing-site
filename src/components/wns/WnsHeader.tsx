@@ -3,7 +3,7 @@ import {
   FOUNDATION_LOGO,
   MEDIA,
   WNS_INTEREST_FORM_LINK,
-  WNS_REPO_LINK,
+  WPL_REPO_LINK,
 } from "../../constants";
 import { Column, Image, Row } from "../common";
 
@@ -61,7 +61,7 @@ function Ctas() {
         Use WNS
       </Button>
       <Button
-        onClick={() => window.open(WNS_REPO_LINK)}
+        onClick={() => window.open(WPL_REPO_LINK)}
         fullWidth
         variant="outlined"
       >
