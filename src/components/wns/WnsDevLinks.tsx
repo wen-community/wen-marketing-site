@@ -1,12 +1,12 @@
 import { Typography } from "@mui/material";
 import {
   ASSET_DASH_ELEMENTS_LINK,
-  DEV_DOCS_LINK,
+  DOCS_LINK,
   ELEMENTS_LOGO,
   POEM,
   POEM_VAULT_LINK,
   WEN_GITHUB_LINK,
-  WNS_REPO_LINK,
+  WPL_REPO_LINK,
 } from "../../constants";
 import { Column, Image, MediaStack, Row } from "../common";
 import { LIGHT_SHADOW } from "../theme";
@@ -131,8 +131,8 @@ type LinkType = { label: string } & (
 );
 const LINKS: LinkType[] = [
   { label: "Wen Github", href: WEN_GITHUB_LINK },
-  { label: "WNS Repository", href: WNS_REPO_LINK },
-  { label: "Developer Documentation", href: DEV_DOCS_LINK },
+  { label: "WPL Repository", href: WPL_REPO_LINK },
+  { label: "Developer Documentation", href: DOCS_LINK },
   { label: "migrate to WNS (Soon)", isComingSoon: true },
 ];
 

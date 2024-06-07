@@ -14,9 +14,10 @@ import {
   WEN_TWITTER_LINK,
   NAV_BREAKPOINT,
   NAV_HEIGHT_PX,
-  WNS_SLUG,
   HOME_SLUG,
   LOGO_CAT,
+  WPL_SLUG,
+  DOCS_LINK,
 } from "../../constants";
 import { BirdEyeIcon, Column, Row, TelegramIcon, TwitterIcon } from "../common";
 import { ReactNode, useState } from "react";
@@ -52,12 +53,16 @@ function useOptions(): {
     },
 
     {
-      text: "WNS",
-      onClick: () => navigate(`/${WNS_SLUG}`),
+      text: "WPL",
+      onClick: () => navigate(`/${WPL_SLUG}`),
     },
     {
       text: "Brand",
       onClick: () => window.open(BRAND_LINK),
+    },
+    {
+      text: "Docs",
+      onClick: () => window.open(DOCS_LINK),
     },
     {
       text: "Trade Wen",
