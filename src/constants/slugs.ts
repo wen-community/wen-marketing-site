@@ -1,2 +1,2 @@
 export const HOME_SLUG = "/";
-export const WNS_SLUG = "wns";
+export const WPL_SLUG = "wpl";

@@ -14,9 +14,10 @@ import {
   WEN_TWITTER_LINK,
   NAV_BREAKPOINT,
   NAV_HEIGHT_PX,
-  WNS_SLUG,
+  WPL_SLUG,
   HOME_SLUG,
   LOGO_CAT,
+  DOCS_LINK,
 } from "../../constants";
 import { BirdEyeIcon, Column, Row, TelegramIcon, TwitterIcon } from "../common";
 import { ReactNode, useState } from "react";
@@ -50,10 +51,13 @@ function useOptions(): {
       icon: <BirdEyeIcon />,
       onClick: () => window.open(BIRDEYE_LINK),
     },
-
     {
-      text: "WNS",
-      onClick: () => navigate(`/${WNS_SLUG}`),
+      text: "WPL",
+      onClick: () => navigate(`/${WPL_SLUG}`),
+    },
+    {
+      text: "Docs",
+      onClick: () => navigate(`/${DOCS_LINK}`),
     },
     {
       text: "Brand",
