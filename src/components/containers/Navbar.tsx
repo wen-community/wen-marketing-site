@@ -57,7 +57,7 @@ function useOptions(): {
     },
     {
       text: "Docs",
-      onClick: () => navigate(DOCS_LINK),
+      onClick: () => window.open(DOCS_LINK),
     },
     {
       text: "Brand",
