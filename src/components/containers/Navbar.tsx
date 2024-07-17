@@ -18,6 +18,7 @@ import {
   HOME_SLUG,
   LOGO_CAT,
   DOCS_LINK,
+  PLUSHY_STORE_LINK,
 } from "../../constants";
 import { BirdEyeIcon, Column, Row, TelegramIcon, TwitterIcon } from "../common";
 import { ReactNode, useState } from "react";
@@ -54,6 +55,10 @@ function useOptions(): {
     {
       text: "WPL",
       onClick: () => navigate(`/${WPL_SLUG}`),
+    },
+    {
+      text: "Plushy",
+      onClick: () => window.open(PLUSHY_STORE_LINK),
     },
     {
       text: "Docs",

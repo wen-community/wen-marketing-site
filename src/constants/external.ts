@@ -16,6 +16,7 @@ export const ASSET_DASH_ELEMENTS_LINK =
   "https://twitter.com/assetdash/status/1757407377765130469";
 export const BRAND_LINK =
   "https://drive.google.com/drive/folders/1h5o8OayHwK2_tRB9QrFF3GLCNeKVf_9a";
+export const PLUSHY_STORE_LINK = "https://shop.wenwencoin.com";
 
 export const WEN_GITHUB_LINK = "https://github.com/wen-community";
 export const WPL_REPO_LINK =
